@@ -1,0 +1,49 @@
+{
+  "name": "@cicada-design/cicada-cli",
+  "version": "0.1.0",
+  "description": "Cicada Cli 是一个 Vue3的构建工具脚手架，通过 Cicada Cli 可以快速搭建一套功能完备的Vue3工程化。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "cz": "git-cz",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laibin-wang/cicada-cli.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "cicada-design",
+    "cicada-cli",
+    "vue3",
+    "typescript",
+    "rollup"
+  ],
+  "author": "wanglaibin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laibin-wang/cicada-cli/issues"
+  },
+  "homepage": "https://github.com/laibin-wang/cicada-cli#readme",
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": []
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4"
+  }
+}
